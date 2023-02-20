@@ -1,4 +1,4 @@
-# Java Exercise Template
+# Java Class Members & Primitive Values
 
 ## Learning Objectives
 - Declare class members and assign them primitive values
