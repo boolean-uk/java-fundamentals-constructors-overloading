@@ -12,36 +12,36 @@ class ExerciseTest {
 
     @Test
     public void shouldAnswerTheUltimateQuestion() {
-        Assertions.assertEquals(42, exercise.answerToTheUltimateQuestion);
+        Assertions.assertEquals(42, this.exercise.answerToTheUltimateQuestion);
     }
 
     @Test
     public void shouldBeAged32() {
-        Assertions.assertEquals(32, exercise.age);
+        Assertions.assertEquals(32, this.exercise.age);
     }
 
     @Test
     public void shouldBeNamedJane() {
-        Assertions.assertEquals("Jane", exercise.firstName);
+        Assertions.assertEquals("Jane", this.exercise.firstName);
     }
 
     @Test
     public void shouldBeAProgrammer() {
-        Assertions.assertTrue(exercise.isProgrammer);
+        Assertions.assertTrue(this.exercise.isProgrammer);
     }
 
     @Test
     public void firstNumberShouldBe9182() {
-        Assertions.assertEquals(9182, exercise.firstNumber);
+        Assertions.assertEquals(9182, this.exercise.firstNumber);
     }
 
     @Test
     public void firstStringShouldBeSpecific() {
-        Assertions.assertEquals("Java is to Javascript what car is to carpet.", exercise.firstString);
+        Assertions.assertEquals("Java is to Javascript what car is to carpet.", this.exercise.firstString);
     }
 
     @Test
     public void isVisibleShouldBePublic() {
-        Assertions.assertTrue(exercise.isVisible);
+        Assertions.assertTrue(this.exercise.isVisible);
     }
 }
