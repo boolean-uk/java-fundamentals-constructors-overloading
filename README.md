@@ -1,10 +1,7 @@
-# Java Exercise Template
-
-This template contains a `Sample` class and a `SampleTest` class. When making changes, ensure you change the project
-name in the [settings.gradle](./settings.gradle) file.
+# Java Class Members & Primitive Values
 
 ## Learning Objectives
-- Sample learning objective
+- Declare class members and assign them primitive values
 
 ## Set up instructions
 - Fork this repository and clone the forked version to your machine
