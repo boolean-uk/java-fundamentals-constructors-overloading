@@ -1,6 +1,6 @@
-package com.booleanuk;
+package com.booleanuk.core;
 
-public class Sample {
+public class Exercise {
     public static String sayHelloWorld() {
         return "Hello, world!";
     }
