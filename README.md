@@ -1,7 +1,7 @@
-# Java Class Members & Primitive Values
+# Java Template
 
 ## Learning Objectives
-- Declare class members and assign them primitive values
+- Example learning objective
 
 ## Set up instructions
 - Fork this repository and clone the forked version to your machine
