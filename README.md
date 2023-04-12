@@ -1,13 +1,16 @@
-# Java Template
+# Java Constructors and Overloading
 
 ## Learning Objectives
-- Example learning objective
+- Use class constructors to initialise state in a class
+- Use overloading to add optional parameters to class methods
+- Use overloading to perform similar logic on different types
 
 ## Set up instructions
 - Fork this repository and clone the forked version to your machine
 - Open the root directory of the project in IntelliJ
 - Implement the requirements listed in comments in the `./src/main/java/com.booleanuk/core/Exercise.java` file
 - When ready to test your solution, open the `./src/test/java/com.booleanuk/core/ExerciseTest.java` file and click a "Run Test" button. You can either run the entire test suite via figure 1 in the screenshot below, or run a specific test via figure 2.
+- There are extensions in the `./src/main/java/com.booleanuk/extension` package
 
 ![](./assets/run-a-test.PNG)
 
