@@ -45,6 +45,6 @@ public class ExtensionTest {
         String[] nums = {"2", "7", "3"};
         int[] result = {6, 21, 9};
 
-        Assertions.assertEquals(result, this.extension.multiply(nums, 3));
+        Assertions.assertArrayEquals(result, this.extension.multiply(nums, 3));
     }
 }
