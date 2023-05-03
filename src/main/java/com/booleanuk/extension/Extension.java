@@ -2,7 +2,35 @@ package com.booleanuk.extension;
 
 import com.booleanuk.helpers.ExtensionBase;
 
+import java.util.Arrays;
+
 public class Extension extends ExtensionBase {
+    public float add (float a, float b){
+        return a + b;
+    }
+    public double add (double a, double b){
+        return a + b;
+    }
+
+    public float subtract (float a, float b){
+        return a - b;
+    }
+
+    public String subtract (String str, char c){
+        return str.replace(Character.toString(c), "");
+    }
+
+    public int multiply(int a, int b) {
+        return a * b;
+    }
+
+    public String multiply(String str, int b) {
+        return (str + ",").repeat(b-1) + str;
+    }
+
+    public int[] multiply(String[] strs, int b) {
+        return Arrays.stream(strs).mapToInt(str -> Integer.parseInt(str) * b).toArray();
+    }
     /*
         Implement the following methods:
 
