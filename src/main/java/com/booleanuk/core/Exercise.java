@@ -51,12 +51,19 @@ public class Exercise extends ExerciseBase {
         Create a constructor that accepts both a String and an int as parameters, in that order, and assign the values
         provided to the name and age members
      */
+        public Exercise (String name, int age){
+            this.age = age;
+            this.name = name;
+        }
 
 
 
     /*
         2. Create a method named add that accepts two integers. The method should return the numbers added together.
      */
+    public int add (int number1, int number2) {
+        return number1 + number2;
+    }
 
 
 
@@ -64,7 +71,9 @@ public class Exercise extends ExerciseBase {
         3. Create another method named add that accepts two Strings. The method should return the strings concatenated
         together with a space in between.
      */
-
+    public String add (String string1, String string2) {
+        return string1 + " " + string2;
+    }
 
 
 }
