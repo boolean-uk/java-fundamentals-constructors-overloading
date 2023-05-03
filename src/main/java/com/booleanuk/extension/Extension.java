@@ -3,6 +3,16 @@ package com.booleanuk.extension;
 import com.booleanuk.helpers.ExtensionBase;
 
 public class Extension extends ExtensionBase {
+    public float add (float a, float b){
+        return a + b;
+    }
+    public double add (double a, double b){
+        return a + b;
+    }
+
+    public float subtract (float a, float b){
+        return a - b;
+    }
     /*
         Implement the following methods:
 
