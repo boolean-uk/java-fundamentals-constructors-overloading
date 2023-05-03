@@ -21,15 +21,23 @@ public class Extension extends ExtensionBase {
         return str.replace(ch+"", "");
     }
     // 5. multiply, which accepts two ints and returns an int (first int multiplied by second int)
-
+    public int multiply(int num1, int num2) {return num1 * num2;}
     // 6. multiply, which accepts a string and an int, and returns a string containing the provided string
     // as many times as the provided int separated by a comma. E.g.
     // multiply("Hello", 3) -> "Hello,Hello,Hello"
-
+    public String multiply(String str, int num) {
+        return (str + ",").repeat(num-1) + str;
+    }
     // 7. multiply, which accepts an array of Strings that each contain a number, and an int
     // The method should return an array of ints that contain the value of multiplying each String number by the provided int
     // E.g.
     // multiply(["2", "7", "3"], 3) -> [6, 21, 9]
-
+    public int[] multiply(String[] numbers, int multiplier) {
+        int[] numArr = new int[numbers.length];
+        for (int i = 0; i < numbers.length; i++) {
+            numArr[i] = Integer.parseInt(numbers[i]) * multiplier;
+        }
+        return numArr;
+    }
 
 }

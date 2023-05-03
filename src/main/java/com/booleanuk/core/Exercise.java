@@ -67,6 +67,8 @@ public class Exercise extends ExerciseBase {
         3. Create another method named add that accepts two Strings. The method should return the strings concatenated
         together with a space in between.
      */
-
+    public String add(String str1, String str2) {
+        return str1 + " " + str2;
+    }
 
 }
