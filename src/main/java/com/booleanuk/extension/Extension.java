@@ -2,6 +2,8 @@ package com.booleanuk.extension;
 
 import com.booleanuk.helpers.ExtensionBase;
 
+import java.util.Arrays;
+
 public class Extension extends ExtensionBase {
     /*
         Implement the following methods:
@@ -25,6 +27,43 @@ public class Extension extends ExtensionBase {
         E.g.
         multiply(["2", "7", "3"], 3) -> [6, 21, 9]
      */
+    public float add(float f1, float f2)
+    {
+        return f1 + f2;
+    }
+    public double add(double d1, double d2)
+    {
+        return d1 + d2;
+    }
+    public float subtract(float f1, float f2)
+    {
+        return f1 - f2;
+    }
+    public String subtract(String s, char c)
+    {
+        System.out.println(s);
+        return s.replace(String.valueOf(c), "");
+    }
+    public int multiply(int num1, int num2)
+    {
+        return num1 * num2;
+    }
+    public String multiply(String s, int count)
+    {
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0; i < count; ++i)
+        {
+            sb.append(s);
+            if(i < count - 1)
+                sb.append(",");
+        }
+        return sb.toString();
+    }
 
-
+    public  int[] multiply(String[] numbers, int multiplier) {
+    return Arrays.stream(numbers)
+            .mapToInt(Integer::parseInt)
+            .map(num -> num * multiplier)
+            .toArray();
+    }
 }
