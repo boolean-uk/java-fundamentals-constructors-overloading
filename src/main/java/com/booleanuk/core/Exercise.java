@@ -52,6 +52,11 @@ public class Exercise extends ExerciseBase {
         provided to the name and age members
      */
 
+    public Exercise(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
 
 
     /*
@@ -64,7 +69,6 @@ public class Exercise extends ExerciseBase {
         3. Create another method named add that accepts two Strings. The method should return the strings concatenated
         together with a space in between.
      */
-
 
 
 }
