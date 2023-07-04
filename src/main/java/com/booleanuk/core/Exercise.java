@@ -83,4 +83,8 @@ public class Exercise extends ExerciseBase {
      * together with a space in between.
      */
 
+    public String add(String a, String b) {
+        return a + " " + b;
+    }
+
 }
