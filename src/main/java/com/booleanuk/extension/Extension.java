@@ -8,6 +8,7 @@ public class Extension extends ExtensionBase {
 
         1. add, which accepts two floats and returns a float (both floats added together)
 
+
         2. add, which accepts two doubles and returns a double (both doubles added together)
 
         3. subtract, which accepts two floats and returns a float (first float minus second float)
@@ -25,6 +26,16 @@ public class Extension extends ExtensionBase {
         E.g.
         multiply(["2", "7", "3"], 3) -> [6, 21, 9]
      */
+
+    public float add(float first, float second) {
+        return first + second;
+    }
+
+    public double add(double first, double second) {
+        return first + second;
+    }
+
+
 
 
 }
