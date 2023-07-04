@@ -52,11 +52,16 @@ public class Exercise extends ExerciseBase {
         provided to the name and age members
      */
 
-
-
+    public Exercise(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
     /*
         2. Create a method named add that accepts two integers. The method should return the numbers added together.
      */
+    public int add(int number1, int number2) {
+        return number1 + number2;
+    }
 
 
 
@@ -64,6 +69,9 @@ public class Exercise extends ExerciseBase {
         3. Create another method named add that accepts two Strings. The method should return the strings concatenated
         together with a space in between.
      */
+    public String add(String str1, String str2) {
+        return str1 + " " + str2;
+    }
 
 
 
