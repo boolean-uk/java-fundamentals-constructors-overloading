@@ -4,27 +4,68 @@ import com.booleanuk.helpers.ExtensionBase;
 
 public class Extension extends ExtensionBase {
     /*
-        Implement the following methods:
-
-        1. add, which accepts two floats and returns a float (both floats added together)
-
-        2. add, which accepts two doubles and returns a double (both doubles added together)
-
-        3. subtract, which accepts two floats and returns a float (first float minus second float)
-
-        4. subtract, which accepts a String and a char and returns a string with all instances of the provided char removed
-
-        5. multiply, which accepts two ints and returns an int (first int multiplied by second int)
-
-        6. multiply, which accepts a string and an int, and returns a string containing the provided string
-        as many times as the provided int separated by a comma. E.g.
-        multiply("Hello", 3) -> "Hello,Hello,Hello"
-
-        7. multiply, which accepts an array of Strings that each contain a number, and an int
-        The method should return an array of ints that contain the value of multiplying each String number by the provided int
-        E.g.
-        multiply(["2", "7", "3"], 3) -> [6, 21, 9]
+     * Implement the following methods:
+     * 
+     * 1. add, which accepts two floats and returns a float (both floats added
+     * together)
+     * 
+     * 2. add, which accepts two doubles and returns a double (both doubles added
+     * together)
+     * 
+     * 3. subtract, which accepts two floats and returns a float (first float minus
+     * second float)
+     * 
+     * 4. subtract, which accepts a String and a char and returns a string with all
+     * instances of the provided char removed
+     * 
+     * 5. multiply, which accepts two ints and returns an int (first int multiplied
+     * by second int)
+     * 
+     * 6. multiply, which accepts a string and an int, and returns a string
+     * containing the provided string
+     * as many times as the provided int separated by a comma. E.g.
+     * multiply("Hello", 3) -> "Hello,Hello,Hello"
+     * 
+     * 7. multiply, which accepts an array of Strings that each contain a number,
+     * and an int
+     * The method should return an array of ints that contain the value of
+     * multiplying each String number by the provided int
+     * E.g.
+     * multiply(["2", "7", "3"], 3) -> [6, 21, 9]
      */
 
+    public float add(float numberOne, float numberTwo) {
+        return numberOne + numberTwo;
+    }
 
+    public double add(double numberOne, double numberTwo) {
+        return numberOne + numberTwo;
+    }
+
+    public float subtract(float numberOne, float numberTwo) {
+        return numberOne - numberTwo;
+    }
+
+    public String subtract(String string, char character) {
+        String char1 = String.valueOf(character);
+        return string.replace(char1, "");
+    }
+
+    public int multiply(int numberOne, int numberTwo) {
+        return numberOne * numberTwo;
+    }
+
+    public String multiply(String string, int i) {
+        String stringTwo = string + ",";
+        String stringThree = stringTwo.repeat(i);
+        return stringThree.substring(0, stringThree.length() - 1);
+    }
+
+    public int[] multiply(String[] stringArray, int i) {
+        int[] intArray = new int[stringArray.length];
+        for (int j = 0; j < stringArray.length; j++) {
+            intArray[j] = Integer.parseInt(stringArray[j]) * i;
+        }
+        return intArray;
+    }
 }
