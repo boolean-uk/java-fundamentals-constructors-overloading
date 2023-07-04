@@ -42,7 +42,9 @@ public class Extension extends ExtensionBase {
     }
     public String subtract(String a, char b)
     {
-         return a.replaceAll("b","");
+        String result= "";
+        result+=b;
+         return a.replaceAll(result,"");
     }
     public int multiply(int a,int b)
     {
@@ -50,8 +52,9 @@ public class Extension extends ExtensionBase {
     }
     public String multiply(String a,int b)
     {
-        a+=a+",";
-        return a.repeat(b).substring(0,a.length()-1);
+        a+=",";
+        a=a.repeat(b);
+        return a.substring(0,a.length()-1);
     }
 
     @Override
