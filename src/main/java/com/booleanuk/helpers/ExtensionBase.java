@@ -2,9 +2,6 @@ package com.booleanuk.helpers;
 
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.List;
-import java.util.StringJoiner;
-import java.util.stream.Collectors;
 
 public class ExtensionBase {
     public float add(float a, float b) {
