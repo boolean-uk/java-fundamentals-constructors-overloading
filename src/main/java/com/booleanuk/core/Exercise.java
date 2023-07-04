@@ -4,6 +4,15 @@ import com.booleanuk.helpers.ExerciseBase;
 
 public class Exercise extends ExerciseBase {
     public String name;
+    /*
+        We can define multiple constructors in a single class! Perhaps we want to pass in different types. Here's a second
+        constructor that accepts an integer.
+     */
+    public int age;
+
+    // We would create an instance of the Exercise class like so:
+    // Exercise e = new Exercise("Java Fundamentals");
+
 
     /*
         A class "constructor" runs whenever we create a new instance of a class. You can think of it like a method
@@ -24,16 +33,6 @@ public class Exercise extends ExerciseBase {
         this.name = name;
     }
 
-    // We would create an instance of the Exercise class like so:
-    // Exercise e = new Exercise("Java Fundamentals");
-
-
-    /*
-        We can define multiple constructors in a single class! Perhaps we want to pass in different types. Here's a second
-        constructor that accepts an integer.
-     */
-    public int age;
-
     public Exercise(int age) {
         this.age = age;
     }
@@ -52,6 +51,11 @@ public class Exercise extends ExerciseBase {
         provided to the name and age members
      */
 
+    public Exercise(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
 
 
     /*
@@ -64,7 +68,6 @@ public class Exercise extends ExerciseBase {
         3. Create another method named add that accepts two Strings. The method should return the strings concatenated
         together with a space in between.
      */
-
 
 
 }
