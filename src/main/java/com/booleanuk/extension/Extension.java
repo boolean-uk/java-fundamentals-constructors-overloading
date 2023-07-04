@@ -63,9 +63,8 @@ public class Extension extends ExtensionBase {
     @Override
     public int[] multiply(String[] strs, int n) {
         return Arrays.stream(strs)
-                .map(Integer::parseInt)
+                .mapToInt(Integer::parseInt)
                 .map(i -> i * n)
-                .mapToInt(Integer::intValue)
                 .toArray();
     }
 
