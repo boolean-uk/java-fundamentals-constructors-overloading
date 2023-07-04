@@ -7,13 +7,31 @@ public class Extension extends ExtensionBase {
         Implement the following methods:
 
         1. add, which accepts two floats and returns a float (both floats added together)
+        */
+        public float add(float a, float b){
+            return a + b;
+        }
+        /*
 
         2. add, which accepts two doubles and returns a double (both doubles added together)
-
+        */
+        public double add(double a, double b){
+            return a + b;
+        }
+        /*
         3. subtract, which accepts two floats and returns a float (first float minus second float)
+        */
+        public float subtract(float a, float b){
+            return a - b;
+        }
+        /*
 
         4. subtract, which accepts a String and a char and returns a string with all instances of the provided char removed
-
+        */
+        public String subtract(String a, char b){
+            return a.replaceAll(Character.toString(b), "");
+        }
+        /*
         5. multiply, which accepts two ints and returns an int (first int multiplied by second int)
 
         6. multiply, which accepts a string and an int, and returns a string containing the provided string
