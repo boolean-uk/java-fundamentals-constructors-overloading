@@ -67,7 +67,7 @@ public class Exercise extends ExerciseBase {
      */
 
     public String add(String s1, String s2) {
-        return s1 + s2;
+        return s1 + " " + s2;
     }
 
 }
