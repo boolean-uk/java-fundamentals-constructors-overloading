@@ -8,6 +8,7 @@ public class Extension extends ExtensionBase {
 
         1. add, which accepts two floats and returns a float (both floats added together)
 
+
         2. add, which accepts two doubles and returns a double (both doubles added together)
 
         3. subtract, which accepts two floats and returns a float (first float minus second float)
