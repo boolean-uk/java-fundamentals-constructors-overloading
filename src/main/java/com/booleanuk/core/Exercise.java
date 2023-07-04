@@ -51,6 +51,7 @@ public class Exercise extends ExerciseBase {
         Create a constructor that accepts both a String and an int as parameters, in that order, and assign the values
         provided to the name and age members
      */
+    public Exercise(String name, int age) { this.name = name; this.age = age;}
 
 
 
