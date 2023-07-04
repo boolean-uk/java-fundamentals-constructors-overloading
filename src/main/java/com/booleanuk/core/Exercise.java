@@ -61,9 +61,9 @@ public class Exercise extends ExerciseBase {
     /*
         2. Create a method named add that accepts two integers. The method should return the numbers added together.
      */
-
+    @Override
     public int add(int num1, int num2) {
-        return  num1 + num2;
+        return num1 + num2;
     }
 
 
