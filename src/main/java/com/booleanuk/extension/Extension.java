@@ -2,9 +2,11 @@ package com.booleanuk.extension;
 
 import com.booleanuk.helpers.ExtensionBase;
 
+import java.util.Arrays;
+
 public class Extension extends ExtensionBase {
 
-    float a, b;
+
     /*
         Implement the following methods:
 
@@ -40,7 +42,22 @@ public class Extension extends ExtensionBase {
         return a - b;
     }
 
+    public String subtract(String x , char y){
+        return x.replaceAll(String.valueOf(y),"");
+    }
+    public int multiply(int x, int y){
+        return x*y;
+    }
+    public String multiply(String x, int y){
+        return (x + ",").repeat(y-1) + x;
+    }
+    public int[] multiply(String[] x, int y){
+        return Arrays.stream(x)
+                .mapToInt(Integer::parseInt)
+                .map(a -> a*y)
+                .toArray();
 
+    }
 
 
 }
