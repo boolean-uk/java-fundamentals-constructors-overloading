@@ -1,35 +1,31 @@
 package com.booleanuk.helpers;
 
-import java.util.Arrays;
-import java.util.Collections;
-
 public class ExtensionBase {
     public float add(float a, float b) {
-        return a + b;
+        return 0f;
     }
 
     public double add(double a, double b) {
-        return a + b;
+        return 0d;
     }
 
     public float subtract(float a, float b) {
-        return a - b;
+        return 0f;
     }
 
     public String subtract(String a, char b) {
-        return a.replace(String.valueOf(b), "");
+        return "";
     }
 
     public int multiply(int a, int b) {
-        return a * b;
+        return 0;
     }
 
     public String multiply(String a, int b) {
-
-        return String.join(",", Collections.nCopies(b, a));
+        return "";
     }
 
     public int[] multiply(String[] a, int b) {
-        return Arrays.stream(a).mapToInt(word -> Integer.parseInt(word) * b).toArray();
+        return new int[0];
     }
 }
