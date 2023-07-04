@@ -2,10 +2,10 @@ package com.booleanuk.helpers;
 
 public class ExerciseBase {
     public int add(int a, int b) {
-        return 0;
+        return a + b;
     }
 
     public String add(String a, String b) {
-        return "";
+        return String.format("%s %s", a, b);
     }
 }
