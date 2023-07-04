@@ -25,6 +25,15 @@ public class Extension extends ExtensionBase {
         E.g.
         multiply(["2", "7", "3"], 3) -> [6, 21, 9]
      */
+    public float add(float x, float y) {
+        return x + y;
+    }
 
+    public double add(double x, double y) {
+        return x + y;
+    }
 
+    public float subtract(float x, float y) {
+        return x - y;
+    }
 }
