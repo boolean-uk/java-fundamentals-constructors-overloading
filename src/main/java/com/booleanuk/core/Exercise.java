@@ -72,6 +72,10 @@ public class Exercise extends ExerciseBase {
      * 2. Create a method named add that accepts two integers. The method should
      * return the numbers added together.
      */
+    public int add(int one, int two)
+    {
+        return one+two;
+    }
 
     /*
      * 3. Create another method named add that accepts two Strings. The method
