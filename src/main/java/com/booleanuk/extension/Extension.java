@@ -3,6 +3,7 @@ package com.booleanuk.extension;
 import com.booleanuk.helpers.ExtensionBase;
 
 import java.sql.SQLOutput;
+import java.util.Arrays;
 
 public class Extension extends ExtensionBase {
     /*
@@ -51,14 +52,22 @@ public class Extension extends ExtensionBase {
 
     public String multiply(String star, int count) {
         StringBuilder stringBuilder = new StringBuilder(star);
-        for (int i = 1; i < count ; i++) {
+        for (int i = 1; i < count; i++) {
             stringBuilder.append("," + star);
         }
         return stringBuilder.toString();
     }
 
+    public int[] multiply(String[] nums, int muplier) {
+        int[] result = new int[nums.length];
 
+        for (int i = 0; i < nums.length; i++) {
+            result[i] = Integer.parseInt(nums[i]) * muplier;
+        }
 
+        return result;
+
+    }
 
 
 }
