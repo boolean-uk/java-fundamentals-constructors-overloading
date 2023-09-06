@@ -2,7 +2,49 @@ package com.booleanuk.extension;
 
 import com.booleanuk.helpers.ExtensionBase;
 
+import java.util.Arrays;
+
 public class Extension extends ExtensionBase {
+
+    public float add(float one, float two) {
+        return one + two;
+    }
+
+    public double add(double one, double two) {
+        return one + two;
+    }
+
+    public float subtract(float one, float two) {
+        return one - two;
+    }
+
+    public String subtract(String one, char two) {
+        String twoAsString = String.valueOf(two);
+        return one.replace(twoAsString, "");
+    }
+
+    public int multiply(int one, int two) {
+        return one * two;
+    }
+
+    public String multiply(String one, int two) {
+        String comma = one + ",";
+        String repeatWord = comma.repeat(two);
+        return repeatWord.substring(0, repeatWord.length() - 1);
+    }
+
+    public int[] multiply(String[] numbers, int num) {
+        int[] multipliedNum = new int[numbers.length];
+
+        for (int i = 0; i < numbers.length; i++) {
+            int intNumbers = Integer.parseInt(numbers[i]);
+            multipliedNum[i] = intNumbers * num;
+        }
+        return multipliedNum;
+    }
+}
+
+
     /*
         Implement the following methods:
 
@@ -27,4 +69,4 @@ public class Extension extends ExtensionBase {
      */
 
 
-}
+
