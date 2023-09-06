@@ -70,6 +70,6 @@ public class Exercise extends ExerciseBase {
         together with a space in between.
      */
     public String add(String Hello, String World) {
-        return "Hello" + " " + "world";
+        return Hello + " " + World;
     }
 }
