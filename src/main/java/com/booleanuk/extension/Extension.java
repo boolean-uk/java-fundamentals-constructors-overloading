@@ -4,6 +4,7 @@ import com.booleanuk.helpers.ExtensionBase;
 
 public class Extension extends ExtensionBase {
     /*
+
         Implement the following methods:
 
         1. add, which accepts two floats and returns a float (both floats added together)
@@ -26,5 +27,27 @@ public class Extension extends ExtensionBase {
         multiply(["2", "7", "3"], 3) -> [6, 21, 9]
      */
 
+    public float add(float a, float b) { return a + b; }
+    public double add(double a, double b) { return a + b; }
+    public float subtract(float a, float b) { return a - b; }
+    // this works because the char is added to a string. so it becomes a string
+    // the replace method needs to be supplied with either two string arguments, or char arguments
+    public String subtract(String str, char c) { return str.replace("" + c, ""); }
+    public int multiply(int a, int b) { return a * b; }
+    public String multiply(String str, int times) {
+        str += ',';
+        String _outString = str.repeat(times);
+        return _outString.substring(0, _outString.length() - 1);
+    }
 
+    public int[] multiply(String[] strs, int multiply) {
+        if (strs == null) return null;
+
+        int[] _result = new int[strs.length];
+
+        for (int i = 0; i < _result.length; i++)
+            _result[i] = Integer.parseInt(strs[i]) * multiply;
+
+        return _result;
+    }
 }
