@@ -3,6 +3,43 @@ package com.booleanuk.extension;
 import com.booleanuk.helpers.ExtensionBase;
 
 public class Extension extends ExtensionBase {
+
+    public float add(float num1, float num2){
+        return num1 + num2;
+    }
+    public double add (double num1, double num2){
+        return num1 + num2;
+    }
+    public float subtract(float num1, float num2){
+        return num1 - num2;
+    }
+    public String subtract(String s, char a) {
+        if (s.contains(String.valueOf(a))) {
+            return s.replace(String.valueOf(a), "");
+        }
+        return s;
+    }
+
+    public int multiply(int num1, int num2){
+        return num1*num2;
+    }
+    public String multiply(String s, int num){
+        String solution = "";
+        String comma = ",";
+        for (int i = 0; i < num; i++) {
+            solution = solution.concat(s).concat(comma);
+        }
+        solution = solution.substring(0, solution.length() - 1);
+        return solution;
+    }
+    public int[] multiply(String[] s, int num){
+        int[] ans = new int[s.length];
+        // ans [6,21,9]
+        for (int i = 0; i < s.length; i++) {
+            ans[i] = Integer.parseInt(s[i]) * num;
+        }
+        return ans;
+    }
     /*
         Implement the following methods:
 
@@ -25,6 +62,5 @@ public class Extension extends ExtensionBase {
         E.g.
         multiply(["2", "7", "3"], 3) -> [6, 21, 9]
      */
-
 
 }
