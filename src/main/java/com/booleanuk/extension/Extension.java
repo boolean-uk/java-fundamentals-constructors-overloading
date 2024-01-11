@@ -26,5 +26,42 @@ public class Extension extends ExtensionBase {
         multiply(["2", "7", "3"], 3) -> [6, 21, 9]
      */
 
+    public float add(float first, float second){
+        return first + second;
+    }
+
+    public double add(double first, double second){
+        return first + second;
+    }
+
+    public float subtract(float first, float second){
+        return first - second;
+    }
+
+    public String subtract(String sentence, char charToRemove){
+        return sentence.replaceAll(String.valueOf(charToRemove), "");
+    }
+
+    public int multiply(int first, int second){
+        return first * second;
+    }
+
+    public String multiply(String text, int factor){
+        StringBuilder multipliedString = new StringBuilder();
+
+        for(int i = 0; i< factor; i++){
+            multipliedString.append(text).append(",");
+        }
+        multipliedString.deleteCharAt(multipliedString.length()-1);
+        return multipliedString.toString();
+    }
+
+    public int[] multiply (String[] numbers, int factor){
+        int[] res = new int[numbers.length];
+        for (int i = 0; i< numbers.length; i++){
+            res[i] = Integer.parseInt(numbers[i]) * factor;
+        }
+        return res;
+    }
 
 }
