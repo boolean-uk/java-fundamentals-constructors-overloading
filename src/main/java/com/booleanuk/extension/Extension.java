@@ -25,6 +25,34 @@ public class Extension extends ExtensionBase {
         E.g.
         multiply(["2", "7", "3"], 3) -> [6, 21, 9]
      */
-
-
+	public float add(float a,float b){
+		return a+b;
+	}
+	public double add (double a, double b){
+		return a+b;
+	}
+	public float subtract(float a, float b){
+		return a-b;
+	}
+	public String subtract(String a, char b){
+		return a.replace((((Character)b).toString()),"");
+	}
+	public int multiply(int a, int b){
+		return  a*b;
+	}
+	public String multiply(String a , int b){
+		String s ="";
+		for (int i = 0; i < b-1; i++) {
+			s+=a+",";
+		}
+		s+=a;
+		return s;
+	}
+	public int[] multiply(String[] a, int b){
+		int[] array = new int[a.length];
+		for (int i = 0; i < a.length; i++) {
+			array[i]=Integer.parseInt(a[i])*b;
+		}
+		return array;
+	}
 }
