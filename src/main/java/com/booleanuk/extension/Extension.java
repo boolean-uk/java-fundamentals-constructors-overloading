@@ -3,6 +3,43 @@ package com.booleanuk.extension;
 import com.booleanuk.helpers.ExtensionBase;
 
 public class Extension extends ExtensionBase {
+
+    public float add(float a, float b) {
+        return a + b;
+    }
+
+    public double add(double a, double b) {
+        return a + b ;
+    }
+
+    public float subtract(float a, float b) {
+        return a - b;
+    }
+
+    public String subtract(String s, char c) {
+        return s.replace(String.valueOf(c), "");
+    }
+
+    public int multiply(int x, int y) {
+        return x * y;
+    }
+
+    public String multiply(String s, int i) {
+        StringBuilder sb = new StringBuilder(s);
+        for (int j = 0; j < i-1; j++) {
+            sb.append(",");
+            sb.append(s);
+        }
+        return sb.toString();
+    }
+
+    public int[] multiply(String[] sArr, int i) {
+        int[] arr = new int[sArr.length];
+        for (int j = 0; j < sArr.length; j++) {
+            arr[j] = Integer.valueOf(sArr[j]) * i;
+        }
+        return arr;
+    }
     /*
         Implement the following methods:
 
