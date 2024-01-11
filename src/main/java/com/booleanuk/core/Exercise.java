@@ -3,6 +3,7 @@ package com.booleanuk.core;
 import com.booleanuk.helpers.ExerciseBase;
 
 public class Exercise extends ExerciseBase {
+
     public String name;
 
     /*
@@ -53,11 +54,18 @@ public class Exercise extends ExerciseBase {
      */
 
 
+    public Exercise(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
     /*
         2. Create a method named add that accepts two integers. The method should return the numbers added together.
      */
-
+    public int add(int numb1, int num2){
+        int sum = num2+numb1;
+        return sum;
+    }
 
 
     /*
@@ -65,6 +73,9 @@ public class Exercise extends ExerciseBase {
         together with a space in between.
      */
 
-
+    public String add(String word1, String word2){
+        String sum = word1 + " " + word2;
+        return sum;
+    }
 
 }
