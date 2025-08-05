@@ -25,6 +25,63 @@ public class Extension extends ExtensionBase {
         E.g.
         multiply(["2", "7", "3"], 3) -> [6, 21, 9]
      */
+    public float add(float a, float b) {
+        return a + b;
+    }
 
+    public double add (double a, double b){
+        return a + b;
+    }
+
+    public float subtract(float a, float b) {
+        return a - b;
+    }
+
+    public String subtract (String a, char b) {
+        String newString = a.replaceAll(String.valueOf(b), "");
+        return newString;
+    }
+
+    public int multiply(int a, int b) {
+        return a * b;
+    }
+
+    public String multiply (String a, int b) {
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < b; i++) {
+            result.append(a);
+            if (i < b - 1) {
+                result.append(",");
+            }
+        }
+        return result.toString();
+    }
+
+    public int[] multiply (String[] strings, int b) {
+        int[] newArray = new int[b];
+        int i = 0;
+        for (String a : strings){
+            newArray[i] = (Integer.parseInt(a) * b);
+            i++;
+        }
+        return newArray;
+    }
 
 }
+
+
+
+
+
+    /*
+
+        7. multiply, which accepts an array of Strings that each contain a number, and an int
+        The method should return an array of ints that contain the value of multiplying each String number by the provided int
+        E.g.
+        multiply(["2", "7", "3"], 3) -> [6, 21, 9]*/
+
+
+
+
+
+
