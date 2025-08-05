@@ -8,6 +8,7 @@ public class Extension extends ExtensionBase {
 
         1. add, which accepts two floats and returns a float (both floats added together)
 
+
         2. add, which accepts two doubles and returns a double (both doubles added together)
 
         3. subtract, which accepts two floats and returns a float (first float minus second float)
@@ -26,5 +27,34 @@ public class Extension extends ExtensionBase {
         multiply(["2", "7", "3"], 3) -> [6, 21, 9]
      */
 
+    // 1)
 
+    public float add(float numOne, float numTwo){
+        return numOne + numTwo;
+    }
+
+    // 2)
+    public double add(double numOne, double numTwo){
+        return numOne + numTwo;
+    }
+    // 3)
+    public float subtract(float numOne, float numTwo){
+        return numOne - numTwo;
+    }
+    // 4)
+    public String subtract(String word, char letter){
+        String answer = "";
+      
+        return answer;
+    }
+
+    public int multiply(int a, int b) {
+        return a*b;
+    }
+
+    public String multiply(String word, int amount) {
+        StringBuilder answer = new StringBuilder();
+        answer.append("word".repeat(Math.max(0, amount)));
+        return word;
+    }
 }
