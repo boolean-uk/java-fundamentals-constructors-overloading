@@ -2,11 +2,14 @@ package com.booleanuk.extension;
 
 import com.booleanuk.helpers.ExtensionBase;
 
+import java.util.Arrays;
+
 public class Extension extends ExtensionBase {
     /*
         Implement the following methods:
 
         1. add, which accepts two floats and returns a float (both floats added together)
+
 
         2. add, which accepts two doubles and returns a double (both doubles added together)
 
@@ -26,5 +29,39 @@ public class Extension extends ExtensionBase {
         multiply(["2", "7", "3"], 3) -> [6, 21, 9]
      */
 
+    public float add(float f1, float f2) {
+        return f1 + f2;
+    }
+
+    public double add(double d1, double d2) {
+        return d1 + d2;
+    }
+
+    public float subtract(float f1, float f2) {
+        return f1 - f2;
+    }
+
+    public String subtract(String d1, char d2) {
+        return d1.replace(d2 + "", "");
+    }
+
+    public int multiply(int f1, int f2) {
+        return f1 * f2;
+    }
+
+    public String multiply(String d1, int d2) {
+        String returnValue = "";
+        while (d2 > 1) {
+            returnValue += d1 + ",";
+            d2 --;
+        }
+        return  returnValue + d1;
+
+    }
+
+    public int[] multiply(String[] d1, int d2) {
+        return Arrays.stream(d1).mapToInt(x -> Integer.parseInt(x) * d2).toArray();
+
+    }
 
 }
