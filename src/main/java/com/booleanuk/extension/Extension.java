@@ -2,7 +2,50 @@ package com.booleanuk.extension;
 
 import com.booleanuk.helpers.ExtensionBase;
 
+import java.sql.Array;
+
 public class Extension extends ExtensionBase {
+
+    public float add(float one, float two){
+        return one+two;
+    }
+
+    public double add(double one, double two){
+        return one+two;
+    }
+
+    public float subtract(float one, float two){
+        return one-two;
+    }
+
+    public String subtract(String str, char chr){
+        String ans = str.replace(chr, ' ');
+        return ans.replaceAll("\\s+","");
+
+    }
+
+    public int multiply(int one, int two){
+        return one*two;
+    }
+
+    public String multiply(String str, int n){
+        StringBuilder k = new StringBuilder();
+        for (int i = 0; i <= n-1; i++){
+            k.append(str);
+            if (i != n-1){
+                k.append(",");
+            }
+        }
+        return k.toString();
+    }
+
+    public int[] multiply(String[] str, int n) {
+        int[] ans = new int[3];
+        for (int i = 0; i <= str.length - 1; i++) {
+            ans[i] = Integer.parseInt(str[i]) * n;
+        }
+        return ans;
+    }
     /*
         Implement the following methods:
 
