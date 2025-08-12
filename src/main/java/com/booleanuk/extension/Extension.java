@@ -26,5 +26,17 @@ public class Extension extends ExtensionBase {
         multiply(["2", "7", "3"], 3) -> [6, 21, 9]
      */
 
+    public String multiply (String s, int i) {
+        String test = "";
+        for (int x = 0; x < i; x++) {
+            if (x != i-1) {
+                test = test + s+ ',';
+            } else {
+                test = test + s;
+            }
+        }
+        return test;
+    }
+
 
 }
